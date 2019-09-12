@@ -1,0 +1,11 @@
+{
+  "extends": "standard",
+  "plugins": [
+    "vue",
+    "html"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "no-new": "off"
+  }
+}

@@ -1,0 +1,69 @@
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button, p { margin: 0; padding: 0; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+fieldset, img { border: 0; }
+
+address, caption, cite, code, em, strong, th { font-style: normal; font-weight: normal; }
+
+ol, ul { list-style: none; }
+
+caption, th { text-align: left; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+
+input, button, textarea, select { font-family: inherit; font-size: inherit; font-weight: inherit; font-style: inherit; }
+
+input, button, textarea, select { *font-size: 100%; }
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus { outline: 0 none; }
+
+:link, :visited { text-decoration: none; }
+
+pre { white-space: pre-wrap; word-wrap: break-word; }
+
+body, button, input, select, textarea { font-size: 14px; font-family: "Microsoft Yahei", Arial, sans-serif; line-height: 1.5; }
+
+body { color: #333; font-family: "Microsoft YaHei"; background-color: #f6f7fb; }
+
+h1, h2, h3 { font-family: "Microsoft Yahei"; }
+
+a { cursor: pointer; color: #333; }
+a:hover { color: #333; }
+a img { vertical-align: middle; }
+a em { display: block; cursor: pointer; text-align: center; }
+
+em { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.hidden { display: none; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.clearfix:after { content: "\200B"; display: block; height: 0; clear: both; }
+
+.clearfix { *zoom: 1; }
+
+.confirm-bg { position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 100; background-color: rgba(0, 0, 0, 0.6); }
+
+.confirm-box { position: fixed; left: 0; right: 0; top: 0; bottom: 0; margin: auto; width: 250px; height: 128px; background-color: #fff; border-radius: 5px; z-index: 100; }
+
+.confirm-box .confirm-title { margin-top: 10px; height: 30px; line-height: 30px; text-align: center; font-size: 15px; }
+
+.confirm-box .confirm-word { padding: 0 46px; height: 83px; width: 158px; font-size: 14px; text-align: center; display: table-cell; vertical-align: middle; color: #666; }
+
+.confirm-box .confirm-btn { position: absolute; left: 0; bottom: 0; width: 100%; overflow: hidden; border-top-color: #dfdfdf; border-top-width: 1px; border-top-style: solid; }
+
+.confirm-box .confirm-btn:after { content: ""; display: block; width: 1px; height: 44px; background-color: #dfdfdf; position: absolute; left: 50%; top: 0; }
+
+.confirm-box .confirm-btn a { float: left; width: 50%; height: 44px; line-height: 44px; text-align: center; font-size: 16px; color: #666; }
+
+.confirm-box .confirm-btn .confirm-org { color: #fa8932; }
+
+.confirm-box .close-tag { position: absolute; display: block; right: 8px; top: 8px; width: 12px; height: 12px; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFWSURBVEhLrZVNTsNADIVzNdjANRCLSvyW/5+rkVSKp4foAqkLYIFaiRsAz1NbSpzJtGN4khXF8/y91lWT6oXosCH6qENYoU6rPwqMKXhrXJdN2+5zY9mE8KOF+xvxFqsmeu6xiBYc8NVtxgNHiIXHwmY4YDI4QJWEpODofYNxHA34Ha6tgYv70ZARfE92TuBnYtnIE4Lz3eCqkhD0k3Ds/VwsafHu7WAsoiux+OGqXAiuj7ZfBFeNhphywVUA3Fpgtxg+I7oQu08AJUP+Bc4C6CEVwIU1TsXmUw6u5Q5JwXktthf7pSEA3Q8ggDModybjeaUAEdIBuEN2gavgTa5wNARvnzs7EIcynyoTcimWjTxw1dYQ/FlOrCFW5+G2TfCPPZ+O+JmzsoclcBXmhiEhvHFA76Xvgasw3wvBt1hUs7Y9APQd9YmwiXjd4t2DtQb8tZ7P934ByLZ9Qcen9f0AAAAASUVORK5CYII="); background-repeat: no-repeat; background-size: 100%; }
+
+.box-prompt { display: none; position: fixed; left: 50%; top: 50%; margin: -0.6rem 0 0 -1rem; padding: 0.25rem 0.1rem; width: 1.6rem; background-color: rgba(0, 0, 0, 0.8); border-radius: 0.05rem; color: #fff; text-align: center; z-index: 20; }
+.box-prompt a { display: none; position: absolute; right: 0.05rem; top: 0.05rem; color: #fff; width: 0.06rem; height: 0.06rem; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADbSURBVEhLrZVLDsIwDAV7zW65ABLr8jkAd2MFK7hKwC/1k0IITWJnJEuNU81IZcEUQtjJvGRO0yDgknnCjcP9rcjzVd8xA4fq4HtgcdBzxBNJ5QBuXiy6i1giBfmiVyueSFVOLJFmOemJdMtJS8QsJ1sRt5yUIsPkJI+kuOWkFBkmByL7+iwAO732UZITdySXy3nB6DFijpTkevXzm3RHtuTEHGmRE7k76muRaqRHTpojFjmpRjxy8jciD2fdRSxykkeEC5bpn75ZTtII3FjMMjeZvb7jBq7VGeYPSxkxHlRGXtIAAAAASUVORK5CYII="); background-repeat: no-repeat; background-size: 100%; }
+
+/*# sourceMappingURL=common.css.map */

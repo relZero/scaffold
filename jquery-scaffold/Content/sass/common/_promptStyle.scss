@@ -1,0 +1,34 @@
+.box-prompt {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -0.6rem 0 0 -1rem;
+  padding: 0.25rem 0.1rem;
+  width: 1.6rem;
+  background: {
+    color: rgba(0, 0, 0, 0.8);
+  }
+  border: {
+    radius: 0.05rem;
+  }
+  color: #fff;
+  text: {
+    align: center;
+  }
+  z-index: 20;
+  a {
+    display: none;
+    position: absolute;
+    right: 0.05rem;
+    top: 0.05rem;
+    color: #fff;
+    width: 0.06rem;
+    height: 0.06rem;
+    background: {
+      image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADbSURBVEhLrZVLDsIwDAV7zW65ABLr8jkAd2MFK7hKwC/1k0IITWJnJEuNU81IZcEUQtjJvGRO0yDgknnCjcP9rcjzVd8xA4fq4HtgcdBzxBNJ5QBuXiy6i1giBfmiVyueSFVOLJFmOemJdMtJS8QsJ1sRt5yUIsPkJI+kuOWkFBkmByL7+iwAO732UZITdySXy3nB6DFijpTkevXzm3RHtuTEHGmRE7k76muRaqRHTpojFjmpRjxy8jciD2fdRSxykkeEC5bpn75ZTtII3FjMMjeZvb7jBq7VGeYPSxkxHlRGXtIAAAAASUVORK5CYII=");
+      repeat: no-repeat;
+      size: 100%;
+    }
+  }
+}

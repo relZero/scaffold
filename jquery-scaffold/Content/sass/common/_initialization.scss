@@ -1,0 +1,162 @@
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+button,
+p {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border: {
+    collapse: collapse;
+    spacing: 0;
+  }
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+em,
+strong,
+th {
+  font: {
+    style: normal;
+    weight: normal;
+  }
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text: {
+    align: left;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: {
+    size: 100%;
+    weight: normal;
+  }
+}
+input,
+button,
+textarea,
+select {
+  font: {
+    family: inherit;
+    size: inherit;
+    weight: inherit;
+    style: inherit;
+  }
+}
+input,
+button,
+textarea,
+select {
+  *font: {
+    size: 100%;
+  }
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: 0 none;
+}
+:link,
+:visited {
+  text-decoration: none;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: {
+    size: 14px;
+    family: "Microsoft Yahei", Arial, sans-serif;
+  }
+  line-height: 1.5;
+}
+body {
+  color: #333;
+  font: {
+    family: "Microsoft YaHei";
+  }
+  background: {
+    color: #f6f7fb;
+  }
+}
+h1,
+h2,
+h3 {
+  font: {
+    family: "Microsoft Yahei";
+  }
+}
+a {
+  cursor: pointer;
+  color: #333;
+  &:hover {
+    color: #333;
+  }
+  img {
+    vertical-align: middle;
+  }
+  em {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+em {
+  white-space: nowrap;
+  overflow: hidden;
+  text: {
+    overflow: ellipsis;
+  }
+}
+.hidden {
+  display: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: "\200B";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
