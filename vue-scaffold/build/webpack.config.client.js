@@ -40,7 +40,7 @@ if (isDev) {
     module: {
       rules: [
         {
-          test: /\.scss/,
+          test: /\.scss$/,
           use: [
             'vue-style-loader',
             'css-loader',
@@ -70,7 +70,7 @@ if (isDev) {
     module: {
       rules: [
         {
-          test: /\.scss/,
+          test: /\.scss$/,
           use: ExtractPlugin.extract({
             fallback: 'vue-style-loader',
             use: [

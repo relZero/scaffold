@@ -1,7 +1,5 @@
 const path = require('path')
 
-const isDev = process.env.NODE_ENV === 'development'
-
 const config = {
   mode: process.env.NODE_ENV || 'production', // development || production
   target: 'web',
@@ -14,10 +12,17 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         exclude: /node_modules/,
         enforce: 'pre'
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ]
       },
       {
         test: /\.vue$/,
@@ -37,10 +42,17 @@ const config = {
               limit: 1024,
               name: 'images/[path][name].[hash:8].[ext]'
             }
-          }
+          },
+          'file-loader'
         ]
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.vue', '.scss'],
+    alias: {
+      '@': path.resolve('src')
+    }
   }
 }
 
