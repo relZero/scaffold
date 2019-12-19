@@ -1,11 +1,15 @@
 {
   "extends": "standard",
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "parser": "vue-eslint-parser",
   "plugins": [
     "vue",
     "html"
   ],
-  "parser": "babel-eslint",
   "rules": {
-    "no-new": "off"
+    "no-new": "off",
+    "space-before-function-paren": 0
   }
 }
